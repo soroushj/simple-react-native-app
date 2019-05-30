@@ -1,4 +1,18 @@
 {
+  "name": "simple-react-native-app",
+  "description": "A very simple React Native app",
+  "private": true,
+  "author": {
+    "name": "Soroush Javadi",
+    "email": "soroush.javadi@gmail.com",
+    "url": "https://github.com/soroushj"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "typescript",
+    "expo"
+  ],
   "main": "AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -24,6 +38,5 @@
     "tslint-config-standard": "^8.0.1",
     "tslint-react": "^4.0.0",
     "typescript": "^3.5.1"
-  },
-  "private": true
+  }
 }
