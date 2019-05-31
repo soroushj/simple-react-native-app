@@ -4,7 +4,7 @@ import { NavigationScreenOptions } from 'react-navigation';
 import { IHomeScreenProps } from './HomeScreen.interfaces';
 import styles from './styles';
 
-export default class HomeScreen extends React.Component<IHomeScreenProps, {}> {
+export default class HomeScreen extends React.Component<IHomeScreenProps> {
   static navigationOptions: NavigationScreenOptions = {
     title: 'Home',
   };
