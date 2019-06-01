@@ -1,26 +1,19 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { NavigationScreenOptions } from 'react-navigation';
-import {
-  ICounterScreenProps,
-  ICounterScreenState,
-} from './CounterScreen.interfaces';
+import { connect } from 'react-redux';
+import { ICounterScreenProps } from './CounterScreen.interfaces';
+import { IRootState } from '../types';
+import { counterIncrement } from '../actions/counter';
 import styles from './styles';
 
-export default class CounterScreen extends React.Component<
-  ICounterScreenProps,
-  ICounterScreenState
-> {
+class CounterScreen extends React.Component<ICounterScreenProps> {
   static navigationOptions: NavigationScreenOptions = {
     title: 'Counter',
   };
 
-  state = { counterValue: 0 };
-
   onIncrementPress = () => {
-    this.setState(prevState => ({
-      counterValue: prevState.counterValue + 1,
-    }));
+    this.props.counterIncrement();
   };
 
   onBackPress = () => {
@@ -31,7 +24,7 @@ export default class CounterScreen extends React.Component<
     return (
       <View style={styles.screenContainer}>
         <View style={styles.elementContainer}>
-          <Text>Counter value: {this.state.counterValue}</Text>
+          <Text>Counter value: {this.props.counterValue}</Text>
         </View>
         <View style={styles.elementContainer}>
           <Button title=" +1 " onPress={this.onIncrementPress} />
@@ -43,3 +36,14 @@ export default class CounterScreen extends React.Component<
     );
   }
 }
+
+const mapStateToProps = (state: IRootState) => {
+  return { counterValue: state.counter };
+};
+
+const mapDispatchToProps = { counterIncrement };
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CounterScreen);
