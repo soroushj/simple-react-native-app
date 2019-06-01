@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { NavigationScreenOptions } from 'react-navigation';
-import { IHomeScreenProps } from './HomeScreen.interfaces';
+import { IHomeScreenProps } from './HomeScreen.types';
 import styles from './styles';
 
 export default class HomeScreen extends React.Component<IHomeScreenProps> {

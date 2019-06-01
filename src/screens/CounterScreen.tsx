@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { NavigationScreenOptions } from 'react-navigation';
 import { connect } from 'react-redux';
-import { ICounterScreenProps } from './CounterScreen.interfaces';
+import { ICounterScreenProps } from './CounterScreen.types';
 import { IRootState } from '../types';
 import { counterIncrement } from '../actions/counter';
 import styles from './styles';
