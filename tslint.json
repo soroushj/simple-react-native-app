@@ -14,12 +14,7 @@
     "member-ordering": false,
     "max-line-length": false,
     "import-name": false,
-    "variable-name": [
-      true,
-      "ban-keywords",
-      "check-format",
-      "allow-pascal-case"
-    ]
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"]
   },
   "rulesDirectory": []
 }
