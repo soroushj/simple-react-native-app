@@ -1,6 +1,6 @@
 {
   "name": "simple-react-native-app",
-  "description": "A very simple React Native app",
+  "description": "A simple React Native app",
   "private": true,
   "author": {
     "name": "Soroush Javadi",
@@ -11,7 +11,11 @@
   "keywords": [
     "react-native",
     "typescript",
-    "expo"
+    "expo",
+    "react-navigation",
+    "redux",
+    "jest",
+    "enzyme"
   ],
   "main": "AppEntry.js",
   "scripts": {
