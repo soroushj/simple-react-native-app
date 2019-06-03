@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen snapshot 1`] = `
+<Component
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Component
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+  >
+    <Component>
+      Welcome!
+    </Component>
+  </Component>
+  <Component
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+  >
+    <Button
+      onPress={[Function]}
+      testID="counterButton"
+      title=" Counter "
+    />
+  </Component>
+</Component>
+`;

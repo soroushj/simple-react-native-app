@@ -20,7 +20,11 @@ export default class HomeScreen extends React.Component<IHomeScreenProps> {
           <Text>Welcome!</Text>
         </View>
         <View style={styles.elementContainer}>
-          <Button title=" Counter " onPress={this.onCounterPress} />
+          <Button
+            title=" Counter "
+            onPress={this.onCounterPress}
+            testID="counterButton"
+          />
         </View>
       </View>
     );
