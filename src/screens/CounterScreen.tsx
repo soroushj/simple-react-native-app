@@ -7,7 +7,7 @@ import { IRootState } from '../types';
 import { counterIncrement } from '../actions/counter';
 import styles from './styles';
 
-class CounterScreen extends React.Component<ICounterScreenProps> {
+export class CounterScreen extends React.Component<ICounterScreenProps> {
   static navigationOptions: NavigationScreenOptions = {
     title: 'Counter',
   };
@@ -27,10 +27,18 @@ class CounterScreen extends React.Component<ICounterScreenProps> {
           <Text>Counter value: {this.props.counterValue}</Text>
         </View>
         <View style={styles.elementContainer}>
-          <Button title=" +1 " onPress={this.onIncrementPress} />
+          <Button
+            title=" +1 "
+            onPress={this.onIncrementPress}
+            testID="incrementButton"
+          />
         </View>
         <View style={styles.elementContainer}>
-          <Button title=" Back " onPress={this.onBackPress} />
+          <Button
+            title=" Back "
+            onPress={this.onBackPress}
+            testID="backButton"
+          />
         </View>
       </View>
     );
