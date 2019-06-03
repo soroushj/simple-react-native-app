@@ -19,7 +19,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "codecov"
   },
   "dependencies": {
     "expo": "^32.0.0",
@@ -40,6 +41,7 @@
     "@types/react-redux": "^6.0.14",
     "babel-jest": "^24.8.0",
     "babel-preset-expo": "^5.0.0",
+    "codecov": "^3.5.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.2",
     "enzyme-to-json": "^3.3.5",
